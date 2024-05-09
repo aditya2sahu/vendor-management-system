@@ -45,11 +45,10 @@ python manage.py createsuperuser
 
 ## Endpoints
 
-- **Sign Up:** [http://127.0.0.1:8000/auth/sing_up](http://127.0.0.1:8000/auth/sing_up)  
-  Use this endpoint to sign up for a new account.
+- **Sign Up:**
+- [http://127.0.0.1:8000/auth/sing_up](http://127.0.0.1:8000/auth/sing_up):Use this endpoint to sign up for a new account.
 
-- **Login:** [http://127.0.0.1:8000/auth/login](http://127.0.0.1:8000/auth/login)  
-  Use this endpoint to obtain JWT tokens. Send a POST request with email and password.
+- **Login:** [http://127.0.0.1:8000/auth/login](http://127.0.0.1:8000/auth/login):Use this endpoint to login.
 
 - **Vendor Profile Management:**
   Create a model to store vendor information including name, contact details, address, and a unique vendor code.
@@ -58,6 +57,14 @@ python manage.py createsuperuser
      - [http://127.0.0.1:8000/api/vendor/id](http://127.0.0.1:8000/api/vendor/): Retrieve a specific vendor's details.
      - [http://127.0.0.1:8000/api/vendor/update/id](http://127.0.0.1:8000/api/vendor/update/): Update a vendor's details.
      - [http://127.0.0.1:8000/api/vendor/delete/id](http://127.0.0.1:8000/api/vendor/delete/): Delete a vendor.
+
+- **Purchase Order Tracking:**
+  Track purchase orders with fields like PO number, vendor reference, order date, items, quantity, and status.
+     - [http://127.0.0.1:8000/api/purchase_orders](http://127.0.0.1:8000/api/purchase_orders): Create a new Purchase Order.
+     - [http://127.0.0.1:8000/api/purchase_orders/](http://127.0.0.1:8000/api/purchase_orders/): List all Purchase Orders.
+     - [http://127.0.0.1:8000/api/purchase_order/id](http://127.0.0.1:8000/api/purchase_order/): Retrieve a specific Purchase Order's details.
+     - [http://127.0.0.1:8000/api/purchase_order/update/id](http://127.0.0.1:8000/api/purchase_order/update/): Update a Purchase Order's details.
+     - [http://127.0.0.1:8000/api/purchase_order/delete/id](http://127.0.0.1:8000/api/purchase_order/delete/): Delete a Purchase Order.
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
