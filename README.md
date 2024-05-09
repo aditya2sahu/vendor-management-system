@@ -4,14 +4,7 @@ Vendor Management System using Django and Django REST Framework. This system wil
 
 ## Installation
 
-1. **Create a virtual environment and activate it:**
-
-   For Linux/Mac:
-   ```bash
-   virtualenv myenv
-   source myenv/bin/activate
-   ```
-   For Window:
+1. Create a virtual environment and activate it:
    ```bash
    virtualenv myenv
    myenv/Scripts/activate
@@ -46,7 +39,7 @@ python manage.py createsuperuser
 ## Endpoints
 
 - **Sign Up:**
-- [http://127.0.0.1:8000/auth/sing_up](http://127.0.0.1:8000/auth/sing_up):Use this endpoint to sign up for a new account.
+- [http://127.0.0.1:8000/auth/sing_up](http://127.0.0.1:8000/auth/sing_up): Use this endpoint to sign up for a new account.
 
 - **Login:** [http://127.0.0.1:8000/auth/login](http://127.0.0.1:8000/auth/login):Use this endpoint to login.
 
