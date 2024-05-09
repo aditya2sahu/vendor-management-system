@@ -52,12 +52,12 @@ python manage.py createsuperuser
   Use this endpoint to obtain JWT tokens. Send a POST request with email and password.
 
 - **Vendor Profile Management:**
-- Create a model to store vendor information including name, contact details, address, and a unique vendor code.
-     [http://127.0.0.1:8000/api/vendors](http://127.0.0.1:8000/api/vendors): Create a new vendor.
-     [http://127.0.0.1:8000/api/vendors/](http://127.0.0.1:8000/api/vendors/): List all vendors.
-     [http://127.0.0.1:8000/api/vendor/id](http://127.0.0.1:8000/api/vendor/): Retrieve a specific vendor's details.
-     [http://127.0.0.1:8000/api/vendor/update/id](http://127.0.0.1:8000/api/vendor/update/): Update a vendor's details.
-     [http://127.0.0.1:8000/api/vendor/delete/id](http://127.0.0.1:8000/api/vendor/delete/): Delete a vendor.
+  Create a model to store vendor information including name, contact details, address, and a unique vendor code.
+     - [http://127.0.0.1:8000/api/vendors](http://127.0.0.1:8000/api/vendors): Create a new vendor.
+     - [http://127.0.0.1:8000/api/vendors/](http://127.0.0.1:8000/api/vendors/): List all vendors.
+     - [http://127.0.0.1:8000/api/vendor/id](http://127.0.0.1:8000/api/vendor/): Retrieve a specific vendor's details.
+     - [http://127.0.0.1:8000/api/vendor/update/id](http://127.0.0.1:8000/api/vendor/update/): Update a vendor's details.
+     - [http://127.0.0.1:8000/api/vendor/delete/id](http://127.0.0.1:8000/api/vendor/delete/): Delete a vendor.
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
