@@ -50,8 +50,9 @@ Vendor Management System using Django and Django REST Framework. This system wil
      - [http://127.0.0.1:8000/api/vendors](http://127.0.0.1:8000/api/vendors): Create a new vendor.
      - [http://127.0.0.1:8000/api/vendors/](http://127.0.0.1:8000/api/vendors/): List all vendors.
      - [http://127.0.0.1:8000/api/vendor/id](http://127.0.0.1:8000/api/vendor/): Retrieve a specific vendor's details.
-     - [http://127.0.0.1:8000/api/vendor/update/id](http://127.0.0.1:8000/api/vendor/update/): Update a vendor's details.
-     - [http://127.0.0.1:8000/api/vendor/delete/id](http://127.0.0.1:8000/api/vendor/delete/): Delete a vendor.
+     - [http://127.0.0.1:8000/api/vendor/update/:id](http://127.0.0.1:8000/api/vendor/update/): Update a vendor's details.
+     - [http://127.0.0.1:8000/api/vendor/delete/:id](http://127.0.0.1:8000/api/vendor/delete/): Delete a vendor.
+     - [http://127.0.0.1:8000/api/vendor/:id/performance](http://127.0.0.1:8000/api/vendor/1233434345/performance): Delete a vendor.
 
 - **Purchase Order Tracking:**
   Track purchase orders with fields like PO number, vendor reference, order date, items, quantity, and status.
@@ -60,7 +61,7 @@ Vendor Management System using Django and Django REST Framework. This system wil
      - [http://127.0.0.1:8000/api/purchase_order/:id](http://127.0.0.1:8000/api/purchase_order/): Retrieve a specific Purchase Order's details.
      - [http://127.0.0.1:8000/api/purchase_order/update/:id](http://127.0.0.1:8000/api/purchase_order/update/): Update a Purchase Order's details.
      - [http://127.0.0.1:8000/api/purchase_order/delete/:id](http://127.0.0.1:8000/api/purchase_order/delete/): Delete a Purchase Order.
-     - [http://127.0.0.1:8000/api/purchase_order/:id/acknowledge](http://127.0.0.1:8000/api/purchase_order/ajdh914/acknowledge): For vendors to acknowledge POs.
+     - [http://127.0.0.1:8000/api/purchase_order/:id/acknowledge](http://127.0.0.1:8000/api/purchase_order/1233434345/acknowledge): For vendors to acknowledge POs.
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
