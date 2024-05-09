@@ -57,9 +57,10 @@ Vendor Management System using Django and Django REST Framework. This system wil
   Track purchase orders with fields like PO number, vendor reference, order date, items, quantity, and status.
      - [http://127.0.0.1:8000/api/purchase_orders](http://127.0.0.1:8000/api/purchase_orders): Create a new Purchase Order.
      - [http://127.0.0.1:8000/api/purchase_orders/](http://127.0.0.1:8000/api/purchase_orders/): List all Purchase Orders.
-     - [http://127.0.0.1:8000/api/purchase_order/id](http://127.0.0.1:8000/api/purchase_order/): Retrieve a specific Purchase Order's details.
-     - [http://127.0.0.1:8000/api/purchase_order/update/id](http://127.0.0.1:8000/api/purchase_order/update/): Update a Purchase Order's details.
-     - [http://127.0.0.1:8000/api/purchase_order/delete/id](http://127.0.0.1:8000/api/purchase_order/delete/): Delete a Purchase Order.
+     - [http://127.0.0.1:8000/api/purchase_order/:id](http://127.0.0.1:8000/api/purchase_order/): Retrieve a specific Purchase Order's details.
+     - [http://127.0.0.1:8000/api/purchase_order/update/:id](http://127.0.0.1:8000/api/purchase_order/update/): Update a Purchase Order's details.
+     - [http://127.0.0.1:8000/api/purchase_order/delete/:id](http://127.0.0.1:8000/api/purchase_order/delete/): Delete a Purchase Order.
+     - [http://127.0.0.1:8000/api/purchase_order/:id/acknowledge](http://127.0.0.1:8000/api/purchase_order/ajdh914/acknowledge): For vendors to acknowledge POs.
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
