@@ -1,4 +1,4 @@
 # Ignore all files and directories within the migrations directory 
 **/migrations/*.py
 *.sqlite3
-venv/
+**/__pycache__/*.pyc
