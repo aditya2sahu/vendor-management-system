@@ -19,7 +19,7 @@ Vendor Management System using Django and Django REST Framework. This system wil
    pip install -r requirements.txt
    ```
 
-4. Run migrations:
+4. Create file inside migration folder:
    - Make "__ init __.py" in migration folder to before migrations
 5. Run migrations:
    ```bash
