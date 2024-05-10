@@ -20,7 +20,7 @@ Vendor Management System using Django and Django REST Framework. This system wil
    ```
 
 4. Run migrations:
-   - Make ____init____.py in migration folder to before migrations
+   - Make _ ___init____.py in migration folder to before migrations
 5. Run migrations:
    ```bash
    python manage.py makemigrations
