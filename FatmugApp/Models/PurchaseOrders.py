@@ -3,7 +3,7 @@ from .Vendors import Vendors
 
 class PurchaseOrder(models.Model):
     po_number = models.CharField(unique=True,max_length=100,blank=True)
-    vendor= models.ForeignKey(Vendors,on_delete=models.DO_NOTHING,null=True,blank=True)
+    vendor= models.ForeignKey(Vendors,on_delete=models.SET_NULL,null=True,blank=True)
     delivery_date = models.DateTimeField(blank=True)
     items = models.JSONField(blank=True)
     quantity = models.IntegerField(blank=True)

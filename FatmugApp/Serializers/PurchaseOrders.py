@@ -65,7 +65,7 @@ class PurchaseOrderInputSerializer(serializers.ModelSerializer):
         if quality_rating and str(status).lower() != "completed":
             raise serializers.ValidationError({"error":"Quality Rate provided but Purchase Order is Incomplete."})
         
-        # create_po.save()
+        create_po.save()
         return  create_po
 
     def update(self, instance, validated_data):
@@ -108,7 +108,7 @@ class PurchaseOrderInputSerializer(serializers.ModelSerializer):
         if instance.issue_date and not instance.vendor:
             raise serializers.ValidationError({"vendor_id":"Vendor deatils didn't provided."})
             
-        # instance.save()  
+        instance.save()  
         return instance
     
 class PurchaseOrderSerializer(serializers.ModelSerializer):

@@ -68,22 +68,22 @@ def add_purchase_order(request):
             if po_status and str(po_status).lower() == "completed":
                 success = on_time_delivery_rate(vendor_id=vendor_id)
                 if success.get("success") is False:
-                    raise serializers.ValidationError(success.get("message"))
+                    raise serializers.ValidationError({"error":success.get("message")})
 
             if quality_rating is not None and str(po_status).lower() == "completed":
                 success = avg_quality_rate(vendor_id=vendor_id)
                 if success.get("success") is False:
-                    raise serializers.ValidationError(success.get("message"))
+                    raise serializers.ValidationError({"error":success.get("message")})
 
             if po_status and vendor_id:
                 success = fulfillment_rate(vendor_id=vendor_id)
                 if success.get("success") is False:
-                    raise serializers.ValidationError(success.get("message"))
+                    raise serializers.ValidationError({"error":success.get("message")})
 
             if acknowledgment_date:
                 success = avg_response_time(vendor_id)
                 if success.get("success") is False:
-                    raise serializers.ValidationError(success.get("message"))
+                    raise serializers.ValidationError({"error":success.get("message")})
 
             return Response(
                 status=status.HTTP_200_OK,
@@ -122,31 +122,25 @@ def update_purchase_order(request, po_id):
 
                 if po_status and str(po_status).lower() == "completed":
                     success = on_time_delivery_rate(
-                        vendor_id=vendor_id, po_seriaizer=po_seriaizer
+                        vendor_id=vendor_id
                     )
                     if success.get("success") is False:
-                        raise serializers.ValidationError(
-                            {"error": success.get("message")}
-                        )
+                        raise serializers.ValidationError({"error":success.get("message")})
 
                 if quality_rating and str(po_instance.status).lower() == "completed":
                     success = avg_quality_rate(vendor_id=vendor_id)
                     if success.get("success") is False:
-                        raise serializers.ValidationError(
-                            {"error": success.get("message")}
-                        )
+                        raise serializers.ValidationError({"error":success.get("message")})
 
                 if po_status and vendor_id:
                     success = fulfillment_rate(vendor_id)
                     if success.get("success") is False:
-                        raise serializers.ValidationError(success.get("message"))
+                        raise serializers.ValidationError({"error":success.get("message")})
 
                 if acknowledgment_date:
                     success = avg_response_time(vendor_id=vendor_id)
                     if success.get("success") is False:
-                        raise serializers.ValidationError(
-                            {"error": success.get("message")}
-                        )
+                        raise serializers.ValidationError({"error":success.get("message")})
 
                 return Response(
                     status=status.HTTP_200_OK,

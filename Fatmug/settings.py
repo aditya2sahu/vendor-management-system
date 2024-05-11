@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'FatmugApp',
+    'Authentication',
     'rest_framework.authtoken',
     'rest_framework',
 ]
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'Fatmug.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["Templates"],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
